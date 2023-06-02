@@ -1,6 +1,6 @@
 FROM amazoncorretto:17
 
-COPY guard/build/libs/guard-0.0.1-SNAPSHOT.jar /usr/local/services/guard.jar
+COPY build/libs/guard-0.0.1-SNAPSHOT.jar /usr/local/services/guard.jar
 
 WORKDIR /usr/local/services/
 
