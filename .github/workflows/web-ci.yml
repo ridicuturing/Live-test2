@@ -21,6 +21,7 @@ jobs:
       # 切换到前端项目根目录
       - name: Switch to frontend directory
         run: cd chatgpt-web
+        working-directory: ./chatgpt-web
 
       - name: Setup
         run: npm i -g @antfu/ni
