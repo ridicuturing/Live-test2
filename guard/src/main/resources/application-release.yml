@@ -1,0 +1,5 @@
+spring:
+  r2dbc:
+    url: ${your.db.r2dbc-url}
+    username: ${your.db.username}
+    password: ${your.db.password}

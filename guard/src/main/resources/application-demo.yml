@@ -1,0 +1,5 @@
+spring:
+  r2dbc:
+    url: r2dbc:h2:file:///./guardDb;AUTO_SERVER=TRUE;
+    username: sa
+    password: asd

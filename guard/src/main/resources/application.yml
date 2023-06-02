@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: guard
+  sql:
+    init:
+      #mode: Always EMBEDDED Never
+      mode: Always
+      schema-locations: classpath:init/schema.sql
+  profiles:
+    active: demo
+  lifecycle:
+    # 配置优雅关闭结束时间，不配置的话默认30s
+    timeout-per-shutdown-phase: 60s
+
+http-proxy:
+  #proxy ai interface
+  enable: false
+  hostname: 127.0.0.1
+  port: 18888
+
+
+logging:
+  level:
+    org:
+      springframework:
+        r2dbc:
+          #switch to print sql info
+          #core: DEBUG
+# 开启优雅关闭
+server:
+  shutdown: graceful
+
+api-key:
+  token-map:
+    #openai's api key list
+    openai:
+      - sk-1...
+      - sk-2...
