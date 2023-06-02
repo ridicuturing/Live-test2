@@ -49,4 +49,4 @@ jobs:
           file: ./guard/Dockerfile
           context: ./guard
           push: true
-          tags: live-java:latest
+          tags: hoi4tech/live-java:latest
