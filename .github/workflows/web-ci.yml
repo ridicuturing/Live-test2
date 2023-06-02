@@ -7,6 +7,10 @@ on:
       master
     tags:
       - 'web-*'
+      
+defaults:
+  run:
+    working-directory: ./chatgpt-web
 
 jobs:
   lint:
@@ -17,12 +21,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
-
-      # 切换到前端项目根目录
-      - name: Switch to frontend directory
-        run: cd chatgpt-web
-        working-directory: ./chatgpt-web
-
+          
       - name: Setup
         run: npm i -g @antfu/ni
 
