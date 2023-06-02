@@ -18,7 +18,8 @@ jobs:
         with:
           node-version: 18.x
       - run: "pwd"
-      - run: "cd guard"
+      - name: swich path
+        run: "cd guard"
 
       - run: "pwd"
       - run: "ls"
