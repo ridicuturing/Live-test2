@@ -31,10 +31,8 @@ jobs:
       - name: Set up Gradle
         uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
         with:
+          arguments: build
           gradle-version: 8.0.2
-
-      - name: Build Java code
-        run: ./gradlew build
 
       - name: Build Docker image
         uses: docker/build-push-action@v2
