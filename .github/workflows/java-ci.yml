@@ -21,6 +21,8 @@ jobs:
       # 切换到前端项目根目录
       - name: Switch to frontend directory
         run: cd guard
+      - run: "pwd"
+      - run: "ls"
 
       - name: Set up JDK
         uses: actions/setup-java@v3
