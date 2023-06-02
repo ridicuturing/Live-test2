@@ -17,6 +17,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
+      - run: "pwd"
 
       # 切换到前端项目根目录
       - name: Switch to frontend directory
