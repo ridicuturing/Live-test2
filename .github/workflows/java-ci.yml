@@ -28,7 +28,7 @@ jobs:
           java-version: 17
 
       - name: Set up Gradle
-        uses: gradle/wrapper-action@v3
+        uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
         with:
           gradle-version: 8.0.2
 
