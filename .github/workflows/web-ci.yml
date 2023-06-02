@@ -28,4 +28,5 @@ jobs:
           run_install: true
 
       - name: build
-        run: pnpm build
+        run: pnpm build -f ./chatgpt-web/package.json
+
