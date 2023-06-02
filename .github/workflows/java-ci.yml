@@ -18,10 +18,8 @@ jobs:
         with:
           node-version: 18.x
       - run: "pwd"
+      - run: "cd guard"
 
-      # 切换到前端项目根目录
-      - name: Switch to frontend directory
-        run: cd guard
       - run: "pwd"
       - run: "ls"
 
