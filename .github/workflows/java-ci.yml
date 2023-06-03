@@ -38,10 +38,6 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_ACCESS_TOKEN }}
-          
-      - run: "ls guard/"
-      - run: "ls guard/build/"
-      - run: "ls guard/build/libs/"
 
       - name: Build and push Docker images
         uses: docker/build-push-action@v4.0.0
